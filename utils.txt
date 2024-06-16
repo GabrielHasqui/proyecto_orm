@@ -1,0 +1,73 @@
+// comando para instalar los pip
+
+pip install -r requirements.txt
+
+// comando pra iniciar al ipython
+
+python manage.py shell -i ipython
+
+// from para importar todas las funciones 
+
+from orm import (
+    insertar_datos_orm,
+    buscar_y_mostrar_estudiantes,
+    buscar_y_mostrar_profesores,
+    buscar_y_mostrar_asignaturas,
+    buscar_y_mostrar_notas_por_nota1,
+    buscar_y_mostrar_notas_por_nota2,
+    buscar_y_mostrar_notas_por_recuperacion,
+    buscar_y_mostrar_estudiantes_por_prefix_y_suffix,
+    buscar_y_mostrar_asignaturas_por_contains_o_suffix,
+    buscar_y_mostrar_profesores_por_nombre_no_contains,
+    buscar_y_mostrar_notas_por_nota1_y_nota2,
+    buscar_y_mostrar_notas_por_recuperacion_is_null_o_nota2,
+    seleccionar_notas_nota1_7a9,
+    seleccionar_notas_fuerade_6y8,
+    seleccionar_recuperacion_notNone,
+    buscar_y_mostrar_notas_ultimo_anio,
+    buscar_y_mostrar_notas_ultimo_mes,
+    buscar_y_mostrar_notas_ultimo_dia,
+    buscar_y_mostrar_notas_antes_2023,
+    buscar_y_mostrar_notas_marzo_cualquier_anio,
+    buscar_y_mostrar_estudiantes_por_nombre_length,
+    buscar_y_mostrar_notas_por_nota1_y_nota2_gt,
+    buscar_y_mostrar_notas_por_recuperacion_y_nota1_gt_nota2,
+    buscar_y_mostrar_notas_por_nota1_o_nota2,
+    buscar_y_mostrar_notas_por_recuperacion_gt_nota1_y_nota2,
+    seleccionar_estudiantes_nota_recuperacion,
+    profesores_con_asignatura_especifica,
+    asignatura_con_nota,
+    asignatura_sin_notas,
+    seleccionar_estudiantes_sin_nota_recuperacion,
+    notas_promedio_mayor_8,
+    notas_nota1_menora6_nota2_mayora7,
+    notas_nota1_en_lista,
+    notas_en_rango_id1a5,
+    notas_recuperacion_noLista,
+    suma_notas_de_estudiante,
+    nota_maxima_estudiante,
+    nota_minima_estudiante,
+    notas_total_estudiante,
+    promedio_notas_estudiante,
+    buscar_y_mostrar_notas_por_estudiante,
+    buscar_y_mostrar_notas_por_periodo,
+    buscar_y_mostrar_notas_por_asignatura_y_periodo,
+    buscar_y_mostrar_notas_por_profesor,
+    buscar_y_mostrar_notas_estudiante_con_valor_mayor,
+    buscar_y_mostrar_notas_estudiante_ordenadas_por_periodo,
+    mostrar_total_notas_estudiante,
+    mostrar_promedio_notas_estudiante_periodo,
+    buscar_y_mostrar_notas_con_observacion,
+    buscar_y_mostrar_notas_estudiante_ordenadas_por_asignatura,
+    actualizar_nota1_para_menores,
+    actualizar_nota2_para_menores,
+    actualizar_recuperacion_para_menores,
+    actualizar_observacion_para_aprobados,
+    actualizar_notas_en_periodo,
+    eliminar_notas_estudiante_fisica,
+    eliminar_logicamente_notas_estudiantes,
+    eliminar_fisicamente_notas_de_periodo,
+    eliminar_logicamente_notas_periodo,
+    eliminar_fisicamente_notas_nota1_menora10,
+    crear_registro_notas_estudiante
+)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Académica</title>
+    <!-- Cargar etiquetas estáticas -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center my-8">Gestión Académica</h1>
+        <nav class="my-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="{% url 'home' %}" class="text-blue-500 hover:underline">Inicio</a></li>
+                <li><a href="{% url 'periodo_list' %}" class="text-blue-500 hover:underline">Periodos</a></li>
+                <li><a href="{% url 'asignatura_list' %}" class="text-blue-500 hover:underline">Asignaturas</a></li>
+                <li><a href="{% url 'profesor_list' %}" class="text-blue-500 hover:underline">Profesores</a></li>
+            </ul>
+        </nav>
+        <!-- Aquí puedes incluir más contenido de tu página -->
+    </div>
+</body>
+</html>
